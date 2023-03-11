@@ -56,7 +56,7 @@ const getPropertyDetails = async( req, res ) => {
 };
 const createProperty = async( req, res ) => {
     try{
-        const { title, description, propertyType, location, price, photo, packages } = req.body;
+        const { title, description, propertyType, location, price, photo, creator, packages } = req.body;
         
         //start a new session...
         const session = await mongoose.startSession();
